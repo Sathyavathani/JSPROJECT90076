@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>JAVASCRIPT</title>
+        <script>
+           //declaring an array using new keyword
+           let arr=new Array()//size is optional
+           const n=parseInt(prompt("Enter array size",1))
+           alert("Reading Array Elements")
+           for(let i=0;i<n;i++)
+           {
+            arr[i]=parseInt(prompt("Enter Elements"+(i+1)))
+           }
+           document.writeln("Array Elements</br>")
+
+           for(let element of arr)
+           {
+            document.writeln(element)
+           }
+           document.write("</br>")
+
+           const course=new Array("aws","mswd","pfsd")//constructor
+           document.writeln("course array length: "+course.length+"</br>")
+           document.writeln("course type: "+typeof course+"</br>")
+
+           document.writeln("<u>course Array Elements: </br></u>")
+           for(let c of course)
+           {
+            document.writeln(c)
+           }
+           //getting values from keyboard
+           let arr2=new Array(5)
+            for(let i=0;i<arr2.length;i++)
+            {
+                arr2[i]=parseInt(prompt("Enter the value",1))
+            }
+            for(let i of arr2)
+            {
+                document.writeln(i+"</br>")
+            }
+           
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
